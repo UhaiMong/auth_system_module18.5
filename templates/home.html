@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Home Page</h1>
+<div class="text-center">
+    {% if messages %}
+    {% for m in messages %}
+    <h4 class="text-warning fw-bold">{{m}}</h4 class="text-warning fw-bold">
+    {% endfor %}
+    {% endif %}
+</div>
+{% endblock %}
